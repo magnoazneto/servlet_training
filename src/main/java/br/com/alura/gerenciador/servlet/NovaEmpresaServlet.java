@@ -28,6 +28,7 @@ public class NovaEmpresaServlet extends HttpServlet {
 		
 		// chamar o JSP
 		RequestDispatcher rd = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
+		request.setAttribute("empresa", nomeEmpresa);
 		rd.forward(request, response);
 	}
 
